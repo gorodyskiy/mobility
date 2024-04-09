@@ -10,7 +10,7 @@
 - jQuery 3.7
 
 
-## Instalation
+## Installation:
 ```
 git clone https://github.com/gorodyskiy/mobility.git mobility
 cd mobility
