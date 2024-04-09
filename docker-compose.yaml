@@ -1,7 +1,6 @@
 version: "3.9"
 services:
     php:
-        # image: php:8.3-fpm
         build: 
             dockerfile: ./docker/Dockerfile
         container_name: php
@@ -30,10 +29,6 @@ services:
             - 3306:3306
         volumes: 
             - data:/var/lib/mysql
-            # - .docker/db/data:/var/lib/mysql
-            # - .docker/logs:/var/log/mysql
-            # - .docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
-            # - .docker/db/sql:/docker-entrypoint-initdb.d
         environment:  
             MYSQL_ROOT_PASSWORD: huyFTYt12_
             MYSQL_DATABASE: test
